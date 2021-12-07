@@ -76,12 +76,19 @@ img{
   margin-right: auto;
 }
 
+.header-wrapper{
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
 .site-header {
   display: flex;
   align-items: center;
   height: 80px;
   margin: 0;
-  background-color: #fff;
 
 }
 .site-title {
