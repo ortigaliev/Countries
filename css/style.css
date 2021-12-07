@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Nunito Sans';
   src: url('fonts/NunitoSans-ExtraBold.woff2') format('woff2'),
-      url('fonts/NunitoSans-ExtraBold.woff') format('woff');
+  url('fonts/NunitoSans-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Nunito Sans';
   src: url('fonts/NunitoSans-SemiBold.woff2') format('woff2'),
-      url('fonts/NunitoSans-SemiBold.woff') format('woff');
+  url('fonts/NunitoSans-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'Nunito Sans';
   src: url('fonts/NunitoSans-Regular.woff2') format('woff2'),
-      url('fonts/NunitoSans-Regular.woff') format('woff');
+  url('fonts/NunitoSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,8 @@
 
 /* Custom Prop */
 :root{
---text-color: #111517;
+  --bg-color: #f2f2f2;
+  --text-color: #111517;
 }
 
 /* GLOBAL STYLES */
@@ -54,27 +55,166 @@ body{
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: var();
+  background-color: var(--bg-color);
   color: var();
 }
 
 img{
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* MAIN CONTENT */
-.main-content{
-  flex-grow: 1;
+.site-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin: 0;
+  background-color: #fff;
+
+}
+.site-title {
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Nunito Sans", "Arial" sans-serif;
+  font-weight: 800;
+  color: var(--text-color);
+}
+.site-mode-button{
+  display: block;
+  margin-left: auto;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Nunito Sans", "Arial" sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-mode-button::before{
+  display: inline-block;
+  margin-right: 8px;
+  width: 15px;
+  height: 13px;
+  background-image: url(../icon/moon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  content: "";
+}
+.site-content {
+padding-top: 48px;
+padding-bottom: 45px;
+}
+
+.search-bar-wrapper{
+  display: flex;
+  align-items: center;
+}
+.site-searchbar {
+  width: 480px;
+  height: 56px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+}
+
+.site-searchbar-input {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nunito Sans", "Arial" sans-serif;
+  font-weight: 400;
+  color: #848484;
+  border: none;
+}
+
+.site-searchbar-input::before{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 32px;
+  margin-right: 24px;
+  background-image: url(../icon/icon-search-black.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  content: "";
+}
+
+/* Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .site-searchbar-input::before{
+    background-image: url(../icon/icon-search-black@2x.svg);
+  }
+}
+
+.region-options {
+  margin-left: auto;
+}
+.region-option-input {
+  display: block;
+
+  width: 200px;
+  height: 56px;
+  padding: 18px 24px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nunito Sans", "Arial" sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  border: none;
+}
+.countries {
+
+}
+
+.countries-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.countries-item {
+  display: block;
+  width: 264px;
+  height: 336px;
+  background-color: #fff;
+}
+
+.countries-item:not(:last-child){
+  margin-right: 74px;
+}
+.countries-item-img {
+}
+.countries-item-info {
+}
+.contries-item-name {
+}
+.countries-item-text {
 }
