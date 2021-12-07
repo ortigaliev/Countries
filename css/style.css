@@ -29,7 +29,12 @@
 /* Custom Prop */
 :root{
   --bg-color: #f2f2f2;
-  --text-color: #111517;
+  --text-color: #3b4042;
+  --header-bg: #fff;
+  --searchbar-bg: #fff;
+  --item-bg: #fff;
+  --button-bg: 2B3844;
+
 }
 
 /* GLOBAL STYLES */
@@ -46,6 +51,11 @@ html{
   box-sizing: inherit;
 }
 
+*:focus{
+outline: 2px dotted #2d2d2d;
+outline-offset: 3px;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -56,13 +66,22 @@ body{
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color);
-  color: var();
+  color: var(--text-color);
 }
 
 img{
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.dark-mode{
+  --text-color: #fff;
+  --bg-color: #202C36;
+  --searchbar-bg: #2B3844;
+  --header-bg: #2B3844;
+  --item-bg: #2B3844;
+  --button-bg: #fff;
 }
 
 
@@ -81,7 +100,7 @@ img{
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  background-color: var(--header-bg);
 }
 
 .site-header {
@@ -104,7 +123,9 @@ img{
 .site-mode-button{
   display: block;
   margin-left: auto;
-  background-color: #fff;
+  background-color: var(--searchbar-bg));
+  text-decoration: none;
+  color: var(--text-color);
   border: none;
   font-size: 16px;
   line-height: 21px;
@@ -134,24 +155,15 @@ padding-bottom: 45px;
   align-items: center;
 }
 .site-searchbar {
+  display: flex;
   width: 480px;
   height: 56px;
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: #fff;
+  background-color: var(--searchbar-bg);
 }
 
-.site-searchbar-input {
-  display: block;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Nunito Sans", "Arial" sans-serif;
-  font-weight: 400;
-  color: #848484;
-  border: none;
-}
-
-.site-searchbar-input::before{
+.site-searchbar::before{
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -162,6 +174,21 @@ padding-bottom: 45px;
   background-size: cover;
   background-position: center center;
   content: "";
+}
+
+.site-searchbar-input {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--searchbar-bg);
+  font-family: "Nunito Sans", "Arial" sans-serif;
+  font-weight: 400;
+  color: #848484;
+  border: none;
+}
+
+.site-searchbar-input::before{
+
 }
 
 /* Retina */
@@ -183,11 +210,10 @@ only screen and (                min-resolution: 2dppx) {
 }
 .region-option-input {
   display: block;
-
   width: 200px;
   height: 56px;
   padding: 18px 24px;
-  background-color: #fff;
+  background-color: var(--searchbar-bg);
   font-size: 14px;
   line-height: 20px;
   font-family: "Nunito Sans", "Arial" sans-serif;
@@ -211,7 +237,7 @@ only screen and (                min-resolution: 2dppx) {
 .countries-item {
   width:  264px;
   height: 336px;
-  background-color: #fff;
+  background-color: var(--item-bg);
   margin-bottom: 45px;
 }
 
