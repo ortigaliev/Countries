@@ -69,7 +69,7 @@ img{
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   padding-left: 80px;
   padding-right: 80px;
   margin-left: auto;
@@ -202,7 +202,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 .countries-item {
   display: block;
-  width: 264px;
+  width: calc(100% / 4 - 75px);
   height: 336px;
   background-color: #fff;
 }
