@@ -201,20 +201,28 @@ only screen and (                min-resolution: 2dppx) {
   padding: 0;
 }
 .countries-item {
-  display: block;
-  width: calc(100% / 4 - 75px);
+  width:  264px;
   height: 336px;
   background-color: #fff;
+  margin-bottom: 45px;
 }
 
 .countries-item:not(:last-child){
   margin-right: 74px;
 }
 .countries-item-img {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .countries-item-info {
+  padding: 24px;
 }
 .contries-item-name {
+  padding: 0;
+  margin: 0;
 }
 .countries-item-text {
+  padding: 0;
+  margin: 0;
 }
