@@ -75,6 +75,10 @@ img{
   object-fit: cover;
 }
 
+a{
+  text-decoration: none;
+}
+
 .dark-mode{
   --text-color: #fff;
   --bg-color: #202C36;
@@ -88,9 +92,9 @@ img{
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 1440px;
-  padding-left: 80px;
-  padding-right: 80px;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,7 +110,6 @@ img{
 .site-header {
   display: flex;
   align-items: center;
-  height: 80px;
   margin: 0;
 
 }
@@ -123,7 +126,7 @@ img{
 .site-mode-button{
   display: block;
   margin-left: auto;
-  background-color: var(--searchbar-bg));
+  background-color: transparent;
   text-decoration: none;
   color: var(--text-color);
   border: none;
@@ -134,17 +137,32 @@ img{
   cursor: pointer;
 }
 
-.site-mode-button::before{
-  display: inline-block;
-  margin-right: 8px;
-  width: 15px;
-  height: 13px;
-  background-image: url(../icon/moon.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  content: "";
+.site-mode-button:hover{
+  opacity: 0.8;
 }
+
+.site-mode-button:active{
+  opacity: 0.6;
+}
+
+.button-inner {
+  display: flex;
+  align-items: center;
+}
+.button-inner-moon-icon {
+  width: 20px;
+  height: 20px;
+
+}
+.button-inner-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: "Nunito Sans","Arial", sans-serif;
+  margin-left: 8px;
+}
+
+
 .site-content {
 padding-top: 48px;
 padding-bottom: 45px;
