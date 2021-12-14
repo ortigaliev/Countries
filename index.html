@@ -33,7 +33,9 @@
     <form  action="https://www.htmlacademy.echo" method="get">
       <div class="search-bar-wrapper">
         <div class="site-searchbar">
-          <input class="site-searchbar-input" type="search" id="search-input" name="search" placeholder="Search for a country…">
+          <svg class="search-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5Zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11Z" fill="#848484" stroke="currentColor"/></svg>
+          <div class="serchbar-input-wrapper">
+            <input class="site-searchbar-input" type="search" id="search-input" name="search" placeholder="Search for a country…"></div>
         </div>
         <div class="region-options">
           <input class="region-option-input" list="regions" name="region" placeholder="Filter by Region">
@@ -50,99 +52,115 @@
 
           <div class="countries container">
             <ul class="countries-list">
+              <a class="countries-item-link" href="#">
+                <li class="countries-item">
+                  <img src="img/germany.jpg" alt="Germaniy" class="countries-item-img" width="264" height="160" srcset="img/germany.jpg 1x, img/germany@2x.jpg 2x" >
+                </img>
+                <div class="countries-item-info">
+                  <h2 class="contries-item-name">Germany</h2>
+                  <p class="countries-item-text">
+                    <strong>Population:</strong> 81,770,900 <br>
+                    <strong>Region:</strong> Europe <br>
+                    Capital: Berlin
+                  </p>
+                </div>
+              </a>
+            </li>
+            <a class="countries-item-link" href="#">
               <li class="countries-item">
-                <img src="img/germany.jpg" alt="Germaniy" class="countries-item-img" width="264" height="160" srcset="img/germany.jpg 1x, img/germany@2x.jpg 2x" >
+                <img src="img/usa.jpg" alt="USA" class="countries-item-img" width="264" height="160" srcset="img/usa.jpg 1x, img/usa@2x.jpg 2x" >
               </img>
               <div class="countries-item-info">
-                <h2 class="contries-item-name">Germany</h2>
+                <h2 class="contries-item-name">United States of America</h2>
                 <p class="countries-item-text">
-                  <strong>Population:</strong> 81,770,900 <br>
-                  Region: Europe <br>
-                  Capital: Berlin
+                  <strong>Population:</strong> 323,947,000 <br>
+                  <strong>Region:</strong> Americas <br>
+                  <strong>Capital:</strong> Washington, D.C.
                 </p>
-              </div>
-            </li>
-            <li class="countries-item">
-              <img src="img/usa.jpg" alt="USA" class="countries-item-img" width="264" height="160" srcset="img/usa.jpg 1x, img/usa@2x.jpg 2x" >
-            </img>
-            <div class="countries-item-info">
-              <h2 class="contries-item-name">United States of America</h2>
-              <p class="countries-item-text">
-                Population: 323,947,000 <br>
-                Region: Americas <br>
-                Capital: Washington, D.C.
-              </p>
+            </a>
             </div>
           </li>
+          <a class="countries-item-link" href="#">
+            <li class="countries-item">
+              <img src="img/brasil.jpg" alt="Brasil" class="countries-item-img" width="264" height="160" srcset="img/brasil.jpg 1x, img/brasil@2x.jpg 2x">
+            </img>
+            <div class="countries-item-info">
+              <h2 class="contries-item-name">Brazil</h2>
+              <p class="countries-item-text">
+                <strong>Population:</strong> 206,135,893 <br>
+                <strong>Region:</strong> Americas <br>
+                <strong>Capital:</strong> Brasília
+              </p>
+            </div>
+          </a>
+        </li>
+        <a class="countries-item-link" href="#">
           <li class="countries-item">
-            <img src="img/brasil.jpg" alt="Brasil" class="countries-item-img" width="264" height="160" srcset="img/brasil.jpg 1x, img/brasil@2x.jpg 2x">
+            <img src="img/icland.jpg" alt="Icland" class="countries-item-img" width="264" height="160" srcset="img/icland.jpg 1x, img/icland@2x.jpg 2x">
           </img>
           <div class="countries-item-info">
-            <h2 class="contries-item-name">Brazil</h2>
+            <h2 class="contries-item-name">Iceland</h2>
             <p class="countries-item-text">
-              Population: 206,135,893 <br>
-              Region: Americas <br>
-              Capital: Brasília
+              <strong>Population:</strong> 334,300 <br>
+              <strong>Region:</strong> Europe <br>
+              <strong>Capital:</strong> Reykjavík
             </p>
           </div>
-        </li>
+        </a>
+      </li>
+      <a class="countries-item-link" href="#">
         <li class="countries-item">
-          <img src="img/icland.jpg" alt="Icland" class="countries-item-img" width="264" height="160" srcset="img/icland.jpg 1x, img/icland@2x.jpg 2x">
+          <img src="img/afganistan.jpg" alt="Afganistan" class="countries-item-img" width="264" height="160" srcset="img/afganistan.jpg 1x, img/afganistan@2x.jpg 2x" >
         </img>
         <div class="countries-item-info">
-          <h2 class="contries-item-name">Iceland</h2>
+          <h2 class="contries-item-name">Afghanistan</h2>
           <p class="countries-item-text">
-            Population: 334,300 <br>
-            Region: Europe <br>
-            Capital: Reykjavík
+            <strong>Population:</strong> 27,657,145 <br>
+            <strong>Region:</strong> Asia <br>
+            <strong>Capital:</strong> Kabul
           </p>
         </div>
-      </li>
+      </a>
+    </li>
+    <a class="countries-item-link" href="#">
       <li class="countries-item">
-        <img src="img/afganistan.jpg" alt="Afganistan" class="countries-item-img" width="264" height="160" srcset="img/afganistan.jpg 1x, img/afganistan@2x.jpg 2x" >
+        <img src="img/aland.jpg" alt="Aland Iceland" class="countries-item-img" width="264" height="160" srcset="img/aland.jpg 1x, img/aland@2x.jpg 2x" >
       </img>
       <div class="countries-item-info">
-        <h2 class="contries-item-name">Afghanistan</h2>
+        <h2 class="contries-item-name">Åland Islands</h2>
         <p class="countries-item-text">
-          Population: 27,657,145 <br>
-          Region: Asia <br>
-          Capital: Kabul
-        </p>
-      </div>
-    </li>
-    <li class="countries-item">
-      <img src="img/aland.jpg" alt="Aland Iceland" class="countries-item-img" width="264" height="160" srcset="img/aland.jpg 1x, img/aland@2x.jpg 2x" >
-    </img>
-    <div class="countries-item-info">
-      <h2 class="contries-item-name">Åland Islands</h2>
-      <p class="countries-item-text">
-        Population: 28,875 <br>
-        Region: Europe <br>
-        Capital: Mariehamn</p>
-      </div>
-    </li>
-    <li class="countries-item">
-      <img src="img/albaniya.jpg" alt="Albaniya" class="countries-item-img" width="264" height="160" srcset="img/albaniya.jpg 1x, img/albaniya@2x.jpg 2x" >
-    </img>
-    <div class="countries-item-info">
-      <h2 class="contries-item-name">Albania</h2>
-      <p class="countries-item-text">
-        Population: 2,886,026 <br>
-        Region: Europe <br>
-        Capital: Tirana</p>
-      </div>
-    </li>
-    <li class="countries-item">
-      <img src="img/algeria.jpg" alt="Algeria" class="countries-item-img" width="264" height="160" srcset="img/algeria.jpg 1x, img/algeria@2x.jpg 2x" >
-    </img>
-    <div class="countries-item-info">
-      <h2 class="contries-item-name">Algeria</h2>
-      <p class="countries-item-text">
-        Population: 40,400,000 <br>
-        Region: Africa <br>
-        Capital: Algiers</p>
-      </div>
-    </li>
+          <strong>Population:</strong> 28,875 <br>
+          <strong>Region:</strong> Europe <br>
+          <strong>Capital:</strong> Mariehamn</p>
+        </div>
+      </li>
+    </a>
+    <a class="countries-item-link" href="#">
+      <li class="countries-item">
+        <img src="img/albaniya.jpg" alt="Albaniya" class="c class="countries-item-link"ountries-item-img" width="264" height="160" srcset="img/albaniya.jpg 1x, img/albaniya@2x.jpg 2x" >
+      </img>
+      <div class="countries-item-info">
+        <h2 class="contries-item-name">Albania</h2>
+        <p class="countries-item-text">
+          <strong>Population:</strong> 2,886,026 <br>
+          <strong>Region:</strong> Europe <br>
+          <strong>Capital:</strong> Tirana</p>
+        </div>
+      </li>
+    </a>
+    <a class="countries-item-link" href="#">
+      <li class="countries-item">
+        <img src="img/algeria.jpg" alt="Algeria" class="countries-item-img" width="264" height="160" srcset="img/algeria.jpg 1x, img/algeria@2x.jpg 2x" >
+      </img>
+      <div class="countries-item-info">
+        <h2 class="contries-item-name">Algeria</h2>
+        <p class="countries-item-text">
+          <strong>Population:</strong> 40,400,000 <br>
+          <strong>Region:</strong> Africa <br>
+          <strong>Capital:</strong> Algiers</p>
+        </div>
+      </li>
+    </a>
   </ul>
 </div>
 <script src="js/main.js"></script>
