@@ -216,6 +216,9 @@ padding-bottom: 45px;
   border: none;
 }
 
+.site-searchbar-input::before{
+
+}
 
 /* Retina */
 @media
