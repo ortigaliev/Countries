@@ -405,13 +405,14 @@ only screen and (                min-resolution: 2dppx) {
   align-items: center;
 }
 .border-countries-title {
+  margin-right: 15px;
   font-family: "Nunito Sans","Arial", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 .border-countries-name-link {
-  padding: 5px 27px;
+  padding: 5px 10px;
   font-weight: 300;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
@@ -420,7 +421,17 @@ only screen and (                min-resolution: 2dppx) {
   background-color: var(--searchbar-bg);
   line-height: 19px;
   color: var(--text-color);
+  box-shadow:rgba(0, 0, 0, 0.2);
 }
+
+.border-countries-name-link:hover {
+  opacity: 0.8;
+}
+
+.border-countries-name-link:active {
+  opacity: 0.6;
+}
+
 .border-countries-name-link:not(:last-child){
   margin-right: 10px;
 }
