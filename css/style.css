@@ -93,9 +93,9 @@ a{
 /* CONTAINER*/
 .container{
   width: 100%;
-  max-width: 1320px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -237,13 +237,18 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .region-options {
-  margin-left: auto;
+  padding: 0;
+  margin: 0;
+
 }
+
 .region-option-input {
   display: block;
   width: 200px;
   height: 56px;
   padding: 18px 24px;
+  margin: 0;
+  margin-left: auto;
   background-color: var(--searchbar-bg);
   font-size: 14px;
   line-height: 20px;
@@ -269,6 +274,8 @@ only screen and (                min-resolution: 2dppx) {
   width:  264px;
   height: 336px;
   background-color: var(--item-bg);
+  padding: 0;
+  margin: 0;
   margin-bottom: 45px;
 }
 
